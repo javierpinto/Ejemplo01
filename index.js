@@ -76,8 +76,8 @@ app.post(
   authorizeRequest,
   async (req, res) => {
     const TRANSFORMATION_TYPES = [
-      { title: "to upper case", value: TO_UPPER_CASE },
-      { title: "to lower case", value: TO_LOWER_CASE },
+      { title: "a mayúsculas", value: TO_UPPER_CASE },
+      { title: "a minúsculas", value: TO_LOWER_CASE },
     ];
     try {
       return res.status(200).send(TRANSFORMATION_TYPES);
